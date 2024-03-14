@@ -20,6 +20,7 @@ body {
   align-items: center;
 }
 .search-box {
+  position: relative;
   width: 35rem;
   height: 3.5rem;
   display: flex;
@@ -40,6 +41,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
   border: none;
+  z-index: 1;
 }
 .icon img {
   width: 1.2rem;
@@ -57,4 +59,33 @@ body {
 }
 #inp-1 {
   font-family: "Dir";
+}
+
+.search-box .del{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  left: 12%;
+  transition: all 0.2s ease;
+  z-index: 0;
+  overflow: hidden;
+}
+.search-box .del svg {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+#inp-1:focus ~ .del svg{
+  opacity: 1;
+  left: 12%;
 }
