@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Dir";
+  src: url(../Fonts/Dirooz.ttf) format("TrueType");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Vazir;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  width: 35rem;
+  height: 3.5rem;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.icon {
+  background-color: #56ad00;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+.icon img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.search-box input {
+  width: 90.5%;
+  text-align: right;
+  font-size: 1rem;
+  outline: none;
+  background-color: #191919;
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+}
+#inp-1 {
+  font-family: "Dir";
+}
